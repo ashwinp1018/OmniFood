@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: white;
+  color: #555;
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.row {
+  max-width: 57rem;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/hero-image.jpeg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+h1 {
+  margin-top: 0 !important;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.1rem;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 57rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 10rem;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: orangered;
+  color: white;
+  border: 0.05rem solid orangered;
+  margin-right: 1.25rem;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 0.05rem solid orangered;
+  color: orangered;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: white;
+  color: orangered;
+}
+
+.logo {
+  height: 5rem;
+  width: auto;
+  float: left;
+  margin-top: 1rem;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 2.75rem;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 0.1rem solid transparent;
+  transition: border-bottom 0.2s;
+  padding: 0.4rem 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 0.15rem solid orangered;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  word-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h2:after {
+  display: block;
+  height: 0.1rem;
+  background-color: orangered;
+  content: "";
+  width: 5rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.long-copy {
+  line-height: 1.45;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.box {
+  padding: 1%;
+}
+
+h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 1.45;
+}
+
+.icon-big {
+  font-size: 3.5rem;
+  display: block;
+  color: orangered;
+  margin-bottom: 0.5rem;
+}
+
+
+.meals-showcase{
+  list-style: none;
+  width: 100%;
+}
+
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+
+.meal-photo{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+ 
+}
+
+
+.meal-photo img{
+  width: 100%;
+  height: auto;
+  transform: scale(1.3);
+  opacity: 0.7;
+  transition: transform 1.3s, opacity 1.3s;
+}
+
+
+.meal-photo img:hover{
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+.meal-caption {
+  /* position: absolute; */
+  bottom: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 90%;
+  padding: 0.5rem 0;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
+
+
+.work-steps {
+  margin-bottom: 2.5rem;
+  margin-right: 1.25rem;
+}
+
+.steps-box:first-child {
+  text-align: center;
+  padding-right: 3%;
+  margin-top: 1.5rem;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 3.5rem;
+}
+
+.app-screen {
+  width: 30%;
+}
+
+.work-steps div {
+  color: orangered;
+  border: 0.2rem solid orangered;
+  display: inline-block;
+  border-radius: 50%;
+  height: 2.75rem;
+  width: 2.75rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.25rem;
+  margin-right: 1.25rem;
+  float: left;
+  font-size: 1.5rem;
+}
+
+.work-steps:last-of-type {
+  margin-bottom: 4rem;
+}
+
+.btn-app img {
+  height: 2.5rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.75rem;
+}
+
+
+.section-cities{
+  background-color: #f3f3f3;
+}
+.city-feature {
+  margin-bottom: 0.25rem;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 1.5rem;
+  text-align: center;
+  color: orangered;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  vertical-align: middle;
+  margin-top: -0.25rem;
+  margin-right: 0.5rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #555;
+}
+
+a:hover,
+a:active {
+  color: orangered;
+  transition: color 0.5s;
+}
+
+/* Testimonials */
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/cust-back.jpg);
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 1.45;
+  margin-top: 2rem;
+  position: relative;
+}
+
+cite {
+  font-size: 90%;
+  display: block;
+  margin-top: 5%;
+}
+
+cite img {
+  height: 2.25rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  border: 0.1rem solid orangered;
+}
+
+blockquote::before {
+  content: '\201C';
+  font-size: 5rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -0.15rem;
+}
+
+.section-plans {
+  background-color: rgb(241, 241, 241);
+}
+
+.plan-box {
+  background-color: white;
+  border-radius: 0.25rem;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.plan-box div {
+  padding: 0.75rem;
+}
+
+.plan-price {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 100;
+  color: orangered;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box li {
+  padding: 0.25rem 0;
+  font-size: 90%;
+}
+
+#signup {
+  text-align: center;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 0.35rem;
+  border-radius: 0.15rem;
+  border: 0.05rem solid #ccc;
+}
+
+textarea {
+  height: 100%;
+}
+
+input[type=checkbox] {
+  margin: 0.5rem 0.25rem;
+}
+
+footer {
+  background-color: orangered;
+  color: white;
+  font-size: 80%;
+  padding: 2.5rem;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 5rem;
+}
+
+.fb:hover {
+  color: blue;
+  transition: color 0.3s;
+}
+
+.tw:hover {
+  color: cyan;
+  transition: color 0.3s;
+}
+
+.gg:hover {
+  color: yellow;
+  transition: color 0.3s;
+}
+
+.ig:hover {
+  color: purple;
+  transition: color 0.3s;
+}

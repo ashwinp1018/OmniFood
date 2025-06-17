@@ -1,0 +1,134 @@
+/* ----------------------------------------------- */
+/* 1. Medium Screens (Tablets and below < 1024px) */
+/* ----------------------------------------------- */
+@media only screen and (max-width: 64rem) {
+  .col {
+    width: 100% !important;
+    float: none;
+    margin: 0 auto 1.25rem;
+    text-align: center;
+  }
+
+  .row {
+    padding: 0 5%;
+  }
+
+  .main-nav {
+    float: none;
+    text-align: center;
+    margin-top: 1.25rem;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin: 0 0.9375rem;
+  }
+
+  .logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero-text-box {
+    width: 90%;
+    text-align: center;
+    top: 45%;
+  }
+
+  .app-screen {
+    width: 60%;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .footer-nav,
+  .social-links {
+    float: none;
+    text-align: center;
+    margin: 1.25rem 0;
+  }
+
+  .footer-nav li,
+  .social-links li {
+    display: inline-block;
+    margin: 0 0.625rem;
+  }
+}
+
+/* ----------------------------------------------- */
+/* 2. Small Screens (Phones < 600px) */
+/* ----------------------------------------------- */
+@media only screen and (max-width: 37.5rem) {
+  html {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  .btn,
+  input[type=submit] {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-text-box {
+    width: 95%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main-nav li {
+    font-size: 0.85rem;
+  }
+
+  .app-screen {
+    width: 80%;
+  }
+
+  .btn-app img {
+    height: 2.5rem;
+  }
+
+  cite img {
+    height: 2.1875rem;
+  }
+
+  footer p {
+    margin-top: 2.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .meals-showcase li {
+    width: 50%; /* Two per row */
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .meals-showcase li {
+    width: 100%; /* Stack one per row */
+  }
+}
+/* Tablet view (2 per row) */
+@media only screen and (max-width: 768px) {
+  .meals-showcase li {
+    width: 48%;
+  }
+}
+
+/* Mobile view (1 per row) */
+@media only screen and (max-width: 480px) {
+  .meals-showcase li {
+    width: 100%;
+  }
+}
