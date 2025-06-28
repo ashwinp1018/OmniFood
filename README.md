@@ -26,3 +26,6 @@ Responsive design with @media queries
 Ionicons for iconography
 
 Vanilla JavaScript for hamburger menu toggle
+
+
+Deploymrnt Link - https://jovial-platypus-785c68.netlify.app
